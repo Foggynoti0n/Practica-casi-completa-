@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Righteous" ;
+  background-color: black; 
+   
+}
+
+header .cabecera{
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.barra {
+    margin-top: 30px;
+}
+
+.barra .logo{
+ display: flex;
+ margin: 20px 70px;
+ color: blanchedalmond;
+}
+
+.barra .logo .fa-meteor
+{
+    font-size: 1.6em ;
+}
+
+.barra .logo h3{
+    font-size: 1.3em;
+    margin: 5px 5px;
+}
+
+
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: -50px 20px;
+}
+
+
+.menu ul li {
+    list-style: none;
+    margin-right: 70px;
+}
+
+.menu ul li a{
+    color: blanchedalmond;
+    text-decoration: none;
+   font-size: 1.5em;
+}
+
+.barra .toggle-menu{
+   display: flex;
+   justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.barra .toggle-menu i{
+    font-size: 1.8em;
+     cursor: pointer;
+     color: azure;
+     display: none;
+}
+
+
+
+
+img{
+ justify-content: flex-start;
+  max-width: 100%;
+ 
+}
+
+
+.info
+{   display: flex;
+    justify-content: flex-end;
+    color: black;
+    
+    margin-top: 30px;
+
+}
+
+.titulos {
+
+    display: block;
+    height: 150px;
+    padding: 30px;
+   align-items: center;
+   margin-top: 150px;
+    width: 50%;
+    font-size: 33px;
+    text-align: center;
+    font-family: "Press Start 2P", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(255, 235, 205, 0.726);
+}
+h1{
+    font-style: italic;
+    
+}
+h5{
+    font-style: normal;
+    font-family:  "Righteous", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button{
+    height: 40px;
+    padding: 5px;
+    width: 70px;
+    background-color: rgba(255, 235, 205, 0.774);
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+    
+}
+
+hr{
+    width: 90%;
+    margin: auto;
+}
+
+@media(max-width:570px){
+    .barra .toggle-menu i {
+        display: block;
+       margin: -58px 30px;
+    }
+
+   .barra .menu ul {
+       flex-direction: column;
+       align-items: center;
+       justify-content: flex-start;
+       width: 100%;
+       height: 100%;
+       z-index: 1;
+       background-color:black;
+       position: fixed;
+       margin-top: 50px;
+       transform:translateX(-115%); 
+       transition: 1s ease-in;
+   }
+
+   .barra .menu .menuOn{
+    transform: translateX(-9%);
+   }
+
+   .barra .menu ul li{
+       margin: 30px;
+       text-transform: uppercase;
+
+   }
+
+
+
+
+
+
+
+
+}
+
